@@ -1,0 +1,9 @@
+
+let tienGui = Number(prompt("Nhập số tiền gửi (VNĐ):"));
+let laiSuat = Number(prompt("Nhập lãi suất (%/năm):"));
+let soThang = Number(prompt("Nhập số tháng gửi:"));
+let tienLai = tienGui * laiSuat * soThang / (12 * 100);
+let tongTien = tienGui + tienLai;
+document.write("Số tiền gửi: " + tienGui.toLocaleString("vi-VN") + "VNĐ<br>");
+document.write("Tiền lãi: " + tienLai.toLocaleString("vi-VN") + "VNĐ<br>");
+document.write("Tổng tiền nhận: " + tongTien.toLocaleString("vi-VN") + "VNĐ");

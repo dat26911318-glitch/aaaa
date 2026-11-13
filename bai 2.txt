@@ -1,0 +1,15 @@
+let isLeapYear=false;
+if (year%400==0){
+	is LeapYear=true;
+} else {
+	if (year%4==0 && year%100!=0){
+ 		is Leapyear=true;
+	} else {
+		is Leapyear=false;
+	}
+}
+if (isLeapYear){
+	alert(year+":nam nhuan");
+} else {
+	alear(year+"nam k nhuan");
+} 

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng lương nhân viên</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <h2 class="text-center text-primary mb-4">
+        BẢNG LƯƠNG NHÂN VIÊN
+    </h2>
+
+    <table class="table table-bordered table-striped table-hover text-center">
+
+        <thead class="table-dark">
+            <tr>
+                <th>Mã NV</th>
+                <th>Họ và tên</th>
+                <th>Chức vụ</th>
+                <th>Lương cơ bản</th>
+                <th>Phụ cấp</th>
+                <th>Tổng lương</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>NV01</td>
+                <td>Nguyễn Văn An</td>
+                <td>Quản lý</td>
+                <td>15.000.000</td>
+                <td>2.000.000</td>
+                <td>17.000.000</td>
+            </tr>
+
+            <tr>
+                <td>NV02</td>
+                <td>Trần Thị Bình</td>
+                <td>Kế toán</td>
+                <td>10.000.000</td>
+                <td>1.000.000</td>
+                <td>11.000.000</td>
+            </tr>
+
+            <tr>
+                <td>NV03</td>
+                <td>Lê Văn Cường</td>
+                <td>Nhân viên</td>
+                <td>8.000.000</td>
+                <td>500.000</td>
+                <td>8.500.000</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+</body>
+</html>

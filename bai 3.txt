@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng nhập</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f2f5;
+        }
+        .form-login {
+            width: 300px;
+            margin: 100px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        h2 {
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #thongbao {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-login">
+        <h2>ĐĂNG NHẬP</h2>
+        <input type="text" id="username"
+               placeholder="Tên đăng nhập">
+        <input type="password" id="password"
+               placeholder="Mật khẩu">
+        <button id="dangnhap">Đăng nhập</button>
+        <p id="thongbao"></p>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#dangnhap").click(function() {
+                let user = $("#username").val();
+                let pass = $("#password").val();
+                if (user == "" || pass == "") {
+                    $("#thongbao").text("Vui lòng nhập đầy đủ thông tin!")
+                                 .css("color", "red");
+                }
+                else if (user == "admin" && pass == "123456") {
+                    $("#thongbao").text("Đăng nhập thành công!")
+                                 .css("color", "green");
+                }
+                else {
+                    $("#thongbao").text("Sai tên đăng nhập hoặc mật khẩu!")
+                                 .css("color", "red");
+                }
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
